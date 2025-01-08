@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Theme</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="hero">
+        <nav>
+            <img src="images/logo.png" alt="">
+            <ul>
+                <li><a href="">HOME</a></li>
+                <li><a href="">ABOUT</a></li>
+                <li><a href="">SERVICE</a></li>
+                <li><a href="">PORTFOLIO</a></li>
+                <li><a href="">CONTACT</a></li>
+            </ul>
+            <img src="images/moon.png" alt="" id="icon">
+        </nav>
+
+        <div class="info">
+            <h1>I'm <span>Lionel Messi</span>from Argentina</h1>
+            <p>I'm a professional football player. <br>I play for Barcelona</p>
+            <a href="">Download CV</a>
+        </div>
+
+        <div class="img-box">
+            <img src="" alt="">
+            <img src="" alt="">
+        </div>
+
+        <div class="social-links">
+            <a href=""></a>
+            <a href=""></a>
+            <a href=""></a>
+        </div>
+    </div>
+
+    <script>
+
+        var icon = document.getElementById('icon');
+
+        icon.onclick = function(){
+            document.body.classList.toggle('dark-theme');
+            if(document.body.classList.contains('dark-theme')){
+                icon.src = "images/sun.png";
+            }else{
+                icon.src = "images/moon.png";
+            }
+        }
+
+    </script>
+
+</body>
+</html>
